@@ -28,6 +28,11 @@
 3. **Variables de entorno**: Configure las variables de entorno necesarias como se describe en `app/` crear un archivo llamado `variables.env` teniendo encuenta la estructura de .env.example \ 
 4. **Ejecución**: Ejecute `uvicorn app.app:app --reload` para iniciar el servidor de desarrollo en el puerto 8000.
 
+## Instrucciones de ejecucion con el contenedor de DOCKER
+1. Ejecute primero: "docker image build -t api" .
+2. ejecute: "docker container run --publish 8080:80 api"
+   
+
 ## Endpoints
 
 El proyecto proporciona una serie de endpoints para realizar operaciones CRUD en `items`:
